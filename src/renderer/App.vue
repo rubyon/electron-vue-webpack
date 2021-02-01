@@ -1,17 +1,17 @@
 <template>
   <div>
-    <LandingPage></LandingPage>
+    <SocketIO></SocketIO>
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import LandingPage from './components/LandingPage.vue'
+import SocketIO from './components/SocketIO.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    LandingPage
+    SocketIO
   }
 })
 </script>

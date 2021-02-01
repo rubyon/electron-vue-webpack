@@ -1,15 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LandingPage from '../components/LandingPage.vue'
+import SocketIO from '../components/SocketIO.vue'
 
 const routes = [
   {
     path: '/',
-    component: LandingPage,
-    name: 'LandingPage'
+    component: SocketIO,
+    name: 'SocketIO'
   }
 ]
 
-// eslint-disable-next-line import/prefer-default-export
 export const router = createRouter({
   history: createWebHistory(),
   routes
