@@ -1,15 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LandingPage from '../components/LandingPage.vue'
+import TCPListener from '../components/TCPListener.vue'
 
 const routes = [
   {
     path: '/',
-    component: LandingPage,
-    name: 'LandingPage'
+    component: TCPListener,
+    name: 'TCPListener'
   }
 ]
 
-// eslint-disable-next-line import/prefer-default-export
 export const router = createRouter({
   history: createWebHistory(),
   routes
