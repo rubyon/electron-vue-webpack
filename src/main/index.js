@@ -16,13 +16,6 @@ async function createWindow() {
   if (app.isPackaged) {
     await mainWindow.loadFile('./index.html')
   } else {
-    const installExtension = require('electron-devtools-installer')
-    installExtension
-      .default(installExtension.VUEJS_DEVTOOLS)
-      .then(() => {})
-      .catch((err) => {
-        console.log('Unable to install `vue-devtools`: \n', err)
-      })
     // eslint-disable-next-line no-undef
     await mainWindow.loadURL(`http://localhost:${WDS_PORT}`)
     mainWindow.webContents.openDevTools({ mode: 'right' })
